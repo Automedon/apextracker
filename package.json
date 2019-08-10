@@ -1,0 +1,48 @@
+{
+  "name": "apextrack",
+  "version": "0.1.0",
+  "engines": {
+    "node": "10.3.0"
+  },
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "concurrently": "^4.1.1",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.0",
+    "react-toastify": "^5.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "nodemon server/index.js",
+    "dev": "concurrently \"yarn run start\" \"yarn run server\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn run build "
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
